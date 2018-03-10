@@ -1,0 +1,41 @@
+div.categoryWithCarousel{
+	width:100%;
+	position: relative;
+}
+
+div.categoryWithCarousel div.headbar{
+	background-color: #DD2727;
+}
+
+div.categoryWithCarousel div.head{
+	width:200px;
+	background-color: #C60A0A;
+	height: 36px;
+	line-height: 36px;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	margin-left: 20px;
+	display: inline-block;
+}
+
+div.categoryWithCarousel div.rightMenu{
+	display: inline-block;
+	color: white;
+}
+
+div.rightMenu a{
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+}
+
+div.carousel-of-product{
+	height: 510px;
+	width:1024px;
+	margin:0 auto;
+}
+
+img.carouselImage{
+	height: 510px !important;
+}
