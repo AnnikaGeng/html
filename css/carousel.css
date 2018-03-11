@@ -38,4 +38,180 @@ div.carousel-of-product{
 
 img.carouselImage{
 	height: 510px !important;
+	z-index: -1;
 }
+
+div.categoryMenu{
+	width: 200px;
+	height: 510px;
+	background-color: #e2e2e3;
+	margin-left:20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index:1;
+
+}
+
+div.categoryMenu a{
+	color:#000;
+}
+
+div.categoryMenu a:hover{
+	color:lightskyblue;
+	text-decoration: none;
+}
+
+div.productsAsideCategorys{
+	width:800px;
+	height:510px;
+	background-color: white;
+	position: absolute;
+	margin-left: 220px;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+div.productsAsideCategorys div.row{
+	margin:20px 80px 0px 80px;
+}
+
+div.productsAsideCategorys div.row div.seperator{
+	margin-top: 20px;
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-bottom-color: #e7e7e7;
+}
+
+div.productsAsideCategorys a{
+	color:#999;
+	font-size: 14px;
+	margin:8px;
+}
+
+div.productsAsideCategorys a:hover{
+	color:#C40000;
+	text-decoration: none;
+}
+
+div.eachCategory{
+	line-height: 30px;
+	padding-left:10px;
+	font-size: 14px;
+}
+
+div.eachCategory span{
+	margin-right: 10px;
+}
+
+div.eachCategory:hover{
+	background-color: white;
+}
+
+div.homepageCategoryProducts{
+	background-color: #F5F5F5;
+	padding: 50px 10px;
+	margin:0 auto;
+	max-width: 1013px;
+}
+
+div.productionItem{
+	width: 189px;
+	height: 285px;
+	border:1px soild white;
+	background-color: white;
+	margin:8px 4px;
+	float: left;
+	cursor: pointer;
+}
+
+div.productionItem span.productItemDesc{
+	color: #666666;
+	display: block;
+	padding: 16px;
+	font-size: 12px;
+}
+
+div.productionItem span.productPrice{
+	color:#FF003A;
+	font-size: 16px;
+	margin-top: -10px;
+	padding-left: 16px;
+	display: block;
+}
+
+div.productionItem img{
+	width: 187px;
+	height: 190px;
+}
+
+div.productionItem img:hover{
+	opacity: 0.7;
+	filter: alpha(opacity:0.7);
+}
+
+div.eachHomepageCategoryProducts{
+	margin:0 0 40px 0;
+}
+
+a.productItemDescLink{
+	display: inline-block;
+	height: 66px;
+	text-decoration: none;
+}
+
+span.categoryTitle{
+	margin-left: 30px;
+	font-size: 16px;
+	color: #646464;
+	font-weight: bold;
+}
+
+div.left-mark{
+	display: inline-block;
+	height: 20px;
+	vertical-align: top;
+	width: 5px;
+	background-color: #19C8A9;
+}
+
+img.endpng{
+	display: block;
+	width: 82px;
+	margin:0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
