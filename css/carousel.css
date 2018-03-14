@@ -1,3 +1,9 @@
+img.catear{
+	position: absolute;
+	height: 15px;
+	display: none;
+}
+
 div.categoryWithCarousel{
 	width:100%;
 	position: relative;
@@ -21,13 +27,21 @@ div.categoryWithCarousel div.head{
 
 div.categoryWithCarousel div.rightMenu{
 	display: inline-block;
-	color: white;
+	
 }
 
 div.rightMenu a{
 	text-decoration: none;
 	color: white;
 	font-size: 16px;
+}
+
+div.categoryWithCarousel div.rightMenu span{
+	margin: 0px 20px 0px 20px;
+}
+
+div.categoryWithCarousel div.rightMenu img{
+	height: 30px;
 }
 
 div.carousel-of-product{
