@@ -1,3 +1,8 @@
+body{
+	font-size: 12px;
+	font-family: Arial;
+}
+
 div.categoryPageDiv{
 	max-width: 1013px;
 	margin: 10px auto;
@@ -54,10 +59,176 @@ table.categorySortBarTable td:hover{
 	background-color: #F1EDEC;
 }
 
-body{
-	font-size: 12px;
-	font-family: Arial;
+div.categoryProducts{
+	padding: 0 20px 40px 20px;
 }
+
+div.productUnit{
+	width: 225px;
+	height: 378px;
+	border:3px solid #fff;
+	background-color: white;
+	margin: 12px 5px;
+	float: left;
+}
+
+div.productUnit:hover{
+	border:3px solid #C40000;
+}
+
+div.productUnitFrame{
+	border:1px solid #eee;
+	height:100%;
+}
+
+div.productUnitFrame:hover{
+	border:1px solid #C40000;
+}
+
+div.productUnit img.productImage{
+	width: 100%;
+	height: 205px;
+}
+
+div.productUnit img.thumbnailImage{
+	border:1px solid #cccccc;
+	margin: 5px;
+}
+
+div.productUnit span.productPrice{
+	font-size: 20px;
+	color: #CC0000;
+	display: block;
+	padding-left: 4px;
+}
+
+div.productUnit a.productLink{
+	margin:10px 0px;
+	color: #333333;
+	display: -webkit-box;
+	max-height: 20px;
+	line-height: 20px;
+	-webkit-line-clamp:1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+div.productUnit a.productLink:hover{
+	text-decoration: underline;
+	color: #C40000;
+}
+
+
+div.productUnit a.storeName{
+	margin: 10px 0px;
+	color: #999999;
+	display: block;
+	text-decoration: underline;
+}
+
+div.productUnit a.storeName:hover{
+	text-decoration: underline;
+	color: #C40000;
+}
+
+div.productUnit div.productInfo{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #EEEEEE;
+	color: #999999;  
+}
+
+div.productUnit span.productDealNumber{
+	font-weight: bold;
+	color: #B57C5B;
+}
+
+div.productUnit span.productReview{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #EEEEEE;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #EEEEEE;   
+}
+
+div.productUnit span.productReviewNumber{
+	font-weight: bold;
+	color: #3388BB;
+}
+
+div.productUnit span.monthDeal, div.productUnit span.productReview{
+	display: inline-block;
+	width: 90px;
+	height: 29px;
+	padding-top: 5px;
+	padding-left: 5px; 
+}
+
+div.productUnit span.wangwang{
+	padding-left: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

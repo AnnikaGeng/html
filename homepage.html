@@ -6,53 +6,7 @@
 <script type="text/javascript" src="bootstrap/js/bootstrap/3.3.6/bootstrap.js"></script>
 <link rel="stylesheet" type="text/css" href="css/carousel.css">
 <link rel="stylesheet" type="text/css" href="css/commenTop.css">
-<script>
-	$(function(){
-		$("div.rightMenu span").mouseenter(function(){
-			var left = $(this).position().left;
-			var top = $(this).position().top;
-			var width = $(this).css("width");
-			var destLeft = parseInt(left) + parseInt(width)/2;
-			$("img#catear").css("left",destLeft);
-			$("img#catear").css("top",top+195);
-			$("img#catear").fadeIn(500);
-		});
-		$("div.rightMenu span").mouseleave(function(){
-			$("img#catear").hide();
-		});
-	});
-	function showProductsAsideCategorys(cid){
-		$("div.eachCategory[cid="+cid+"]").css("background-color","white");
-		$("div.eachCategory[cid="+cid+"]").css("color","#87CEFA");
-		$("div.productsAsideCategorys[cid="+cid+"]").show();
-	}
-
-	function hideProductsAsideCategorys(cid){
-		$("div.eachCategory[cid="+cid+"]").css("background-color","#e2e2e3");
-		$("div.eachCategory[cid="+cid+"]").css("color","#000");
-		$("div.productsAsideCategorys[cid="+cid+" ]").hide();
-	}
-
-	$(function(){
-		$("div.eachCategory").mouseenter(function(){
-			var cid = $(this).attr("cid");
-			showProductsAsideCategorys(cid);
-		});
-		$("div.eachCategory").mouseleave(function(){
-			var cid = $(this).attr("cid");
-			hideProductsAsideCategorys(cid);
-		});
-		$("div.productsAsideCategorys").mouseenter(function(){
-			var cid = $(this).attr("cid");
-			showProductsAsideCategorys(cid);
-		});
-		$("div.productsAsideCategorys").mouseleave(function(){
-			var cid = $(this).attr("cid");
-			hideProductsAsideCategorys(cid);
-		});
-	});
-
-</script>
+<script type="text/javascript" src="js/homepage.js"></script>
 
 </head>
 
@@ -80,7 +34,7 @@
 	<!--搜索框部分-->
 	<div>
 		<a href="#nowhere">
-			<img class="logo" src="pics/logo.gif" id="logo">
+			<img class="logo" src="pics/logo.png" width="350px" id="logo">
 		</a>
 
 		<div class="searchDiv">
@@ -243,8 +197,8 @@
 		<div style="position: relative;left: 0;top: 0;">
 			<div class="productsAsideCategorys" cid="83" style="display: none;">
             <div class="row show1">
-                        <a href="catagory.html">
-                                    皮带
+                        <a href="catagory.html"  style="color: #C40000;">
+                                    春季新品
                         </a>
                         <a href="#nowhere">
                                     周末
