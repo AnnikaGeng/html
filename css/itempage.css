@@ -1,0 +1,31 @@
+div.imgAndInfo{
+	margin: 40px 20px;
+
+}
+
+div.imgInimgAndInfo{
+	width: 400px;
+	float: left;
+}
+
+div.imgAndInfo img.bigImg{
+	width: 400px;
+	height: 400px;
+	padding: 20px;
+	border: 1px solid #F2F2F2;
+}
+
+div.imgAndInfo div.smallImgDiv{
+	margin: 20px auto;
+	margin-left: 50px;
+}
+
+div.imgAndInfo img.smallImage{
+	width: 60px;
+	height: 60px;
+	border: 2px solid white;
+}
+
+div.imgAndInfo img.smallImage:hover{
+	border: 2px solid black;
+}
