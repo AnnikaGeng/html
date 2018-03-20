@@ -1,18 +1,23 @@
+body{
+	font-size: 12px;
+	font-family: Arial;
+}
+
 div.imgAndInfo{
-	margin: 40px 20px;
+	margin: 40px 65px;
 
 }
 
 div.imgInimgAndInfo{
-	width: 400px;
+	width: 420px;
 	float: left;
 }
 
 div.imgAndInfo img.bigImg{
-	width: 400px;
-	height: 400px;
-	padding: 20px;
-	border: 1px solid #F2F2F2;
+	width: 420px;
+	height: 420px;
+	
+	
 }
 
 div.imgAndInfo div.smallImgDiv{
@@ -29,3 +34,105 @@ div.imgAndInfo img.smallImage{
 div.imgAndInfo img.smallImage:hover{
 	border: 2px solid black;
 }
+
+div.infoInimgAndInfo{
+	padding: 0 20px;
+	overflow: hidden;
+}
+
+div.infoInimgAndInfo div.productTitle{
+	font-size: 16px;
+	color: black;
+	margin: 0 10px;
+	font-weight: bold;
+}
+
+div.infoInimgAndInfo div.productSubTitle{
+	color: #DD2727;
+	font-size: 14px;
+	margin: 0 10px;
+}
+
+div.infoInimgAndInfo div.productPriceDiv{
+	background-image: url(../pics/priceBackground.png);
+	height: 108px;
+	padding: 10px;
+	color: #666666;
+	width: 500px;
+}
+
+div.infoInimgAndInfo div.gouwujuanDiv{
+	margin-top:5px;
+}
+
+div.infoInimgAndInfo div.originalDiv{
+	margin-top: 5px;
+}
+
+div.infoInimgAndInfo div.originalDiv span.originalPriceDesc{
+	color: #999999;
+	display: inline-block;
+	padding-right: 40px;
+	margin:10px 0;
+}
+
+div.infoInimgAndInfo span.originalPriceYuan{
+	color: red;
+	font-size: 18px;
+	display: inline-block;
+	position: relative;
+	top:-2px;
+}
+
+div.infoInimgAndInfo span.originalPrice{
+	color: red;
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: -3px;
+}
+
+div.infoInimgAndInfo span.promotionDesc{
+	color: #999999;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+div.infoInimgAndInfo span.promotionPrice{
+	color: #b5611c;
+}
+
+div.infoInimgAndInfo div.promotionDiv{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
