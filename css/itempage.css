@@ -192,6 +192,7 @@ div.productNumber input.productNumberSetting{
 	border:0;
 	height: 70%;
 	width: 80%;
+	outline: none;
 }
 
 div.colorOfProduct{
@@ -294,43 +295,59 @@ div.productDetailDiv{
 	margin:40px auto;
 }
 
+div.productReviewContentPart{
+	width: 790px;
+	margin:40px auto;
+}
+
 div.productDetailTopPart{
 	border:1px solid #DFDFDF;
-	border-left-width: 0px; 
+	height: 46px;
+	
+	line-height: 46px;
+}
+
+a.productDetailTopPartSelectedLink{
+	padding:0 20px;
+	color: #333333;
+	display: inline-block;
+	width: 110px;
+	text-align: center;
 }
 
 a.selected{
 	border-right: 1px solid #cfbfb1;
 	border-left: 1px solid #cfbfb1;
-	color: #FF0036;
+	color: #FF0036 !important; 
 	display: inline-block;
 	font-weight: bold;
 	line-height: 46px;
-	width: 90px;
+	width: 110px;
 	text-align: center;
 	position: relative;
 }
 
 a.selected:before{
-	content: '';
+	content: "";
 	border:1px solid #FF0036;
 	display: block;
-	width: 90px;
+	width: 110px;
 	height: 0;
 	position: absolute;
-	top:-1px;
-	left: -1px;
+	left:-1px;
 }
 
 a.selected:after{
-	content: '';
+	content: "";
+	display: block;
 	border-color:#FF0036 transparent transparent;
 	border-style: solid;
 	border-width: 5px;
 	width: 0;
 	height: 0;
 	position: absolute;
-	margin-left: -30px;
+	top:0;
+	left: 50px;
 
 }
 
@@ -338,11 +355,50 @@ a.productDetailTopReviewLink{
 	padding:0 20px;
 	border-right: 1px dotted #D2D2D2;
 	color:#333333;
+	text-align: center;
+	display: inline-block;
+	width: 110px;
 }
 
 span.productDetailTopReviewNumber{
 	color: #3355B9;
+	
 }
+
+div.productReviewContentPart{
+	padding-top: 50px;
+}
+
+div.productReviewItem{
+	border-bottom: 1px solid #E3E3E3;
+	margin:10px 0px;
+}
+
+
+div.productReviewItem div.productReviewItemDesc{
+	width: 80%;
+	display: inline-block;
+	color: #333333;
+	margin:5px 20px;
+	float: left;
+}
+
+div.productReviewItemDate{
+	margin:15px 0 0 0;
+	color: #CCCCCC;
+}
+
+div.productReviewItem div.productReviewUserInfo{
+	color: #404040;
+	margin:5px 20px;
+	padding:20px 0;
+}
+
+span.userInfoGrayPart{
+	color:#999999;
+}
+
+
 
 div.productParamentPart{
 	border:1px solid #DFDFDF;

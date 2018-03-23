@@ -5,19 +5,22 @@
 <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap/3.3.6/bootstrap.css">
 <script type="text/javascript" src="bootstrap/js/bootstrap/3.3.6/bootstrap.js"></script>
 <link rel="stylesheet" type="text/css" href="css/itempage.css">
+<script type="text/javascript" src="js/itempage.js"></script>
 
 <body>
 <div class="imgAndInfo">
 	<div class="imgInimgAndInfo">
 		<img src="pics/spring1.jpg" class="bigImg" width="100px">
 		<div class="smallImgDiv">
-			<img src="pics/spring1.jpg" class="smallImage" width="56px">
-			<img src="pics/spring12.jpg" class="smallImage" width="56px">
-			<img src="pics/spring13.jpg" class="smallImage" width="56px">
-			<img src="pics/spring14.jpg" class="smallImage" width="56px">
-			<img src="pics/spring15.jpg" class="smallImage" width="56px">
+			<img src="pics/spring1.jpg" class="smallImage" bigImgURL="pics/spring1.jpg" width="56px">
+			<img src="pics/thumbnail12.jpg" class="smallImage" bigImgURL="pics/spring12.jpg">
+			<img src="pics/thumbnail13.jpg" class="smallImage" bigImgURL="pics/spring13.jpg">
+			<img src="pics/thumbnail14.jpg" class="smallImage" bigImgURL="pics/spring14.jpg">
+			<img src="pics/thumbnail15.jpg" class="smallImage" bigImgURL="pics/spring15.jpg">
 		</div>
+		<div class="img4load hidden"></div>
 	</div>
+
 	<div class="infoInimgAndInfo">
 		<div class="productTitle">
 			女装U 全棉针织衫(短袖) 406747 优衣库UNIQLO
@@ -81,7 +84,7 @@
 		<span>数量</span>
 		<span>
 		<span class="productNumberSettingSpan">
-			<input type="text" placeholder="1" class="productNumberSetting">
+			<input type="text" placeholder="1" class="productNumberSetting" onfocus="this.placeholder=''" onblur="this.placeholder='1'">
 		</span>
 		<span class="arrow">
 			<a href="#nowhere" class="increaseNumber">
@@ -97,7 +100,7 @@
 			</a>
 		</span>件
 	</span>
-	<span>库存紧张</span>
+	<span>库存30件</span>
 	</div>
 
 	<div class="buyDiv">
@@ -126,9 +129,10 @@
 <div class="productDetailDiv" style="display: block;">
 	<div class="productDetailTopPart">
 		<a href="#nowhere" class="productDetailTopPartSelectedLink selected">商品详情</a>
-		<a href="#nowhere" class="productDetailTopReviewLink">累计评价 <span class="productDetailTopReviewNumber">122</span></a>
-
+		<a href="#nowhere" class="productDetailTopReviewLink">累计评价 <span class="productDetailTopReviewNumber">22</span></a>
 	</div>
+
+
 	<div class="productParamentPart">
 		<div class="brand">
 		<div class="brandNameDesc">品牌名称：</div>
@@ -152,6 +156,45 @@
 		<img src="pics/detail.jpg">
 	</div>
 </div>
+
+<div class="productReviewContentPart">
+		<div class="productReviewItem">
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					衣服很漂亮！主要是颜色特别特别的显白显嫩。但是我太瘦了，穿起来松松的。努力增肥中！百搭款的，配裙子裤子都好看！
+				</div>
+				<div class="productReviewItemDate">03.14</div>
+			</div>
+			<div class="productReviewItemUserInfo">h***y<span class="userInfoGrayPart">(匿名)</span>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		<div class="productReviewItem">
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					这件机智的选大了一码 很合身～～颜色也超级好看 质量很好
+				</div>
+				<div class="productReviewItemDate">03.17</div>
+			</div>
+			<div class="productReviewItemUserInfo">西***喵<span class="userInfoGrayPart">(匿名)</span>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		<div class="productReviewItem">
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					很好看，短款
+				</div>
+				<div class="productReviewItemDate">03.19</div>
+			</div>
+			<div class="productReviewItemUserInfo">h***1<span class="userInfoGrayPart">(匿名)</span>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+	</div>
+
+
+
 
 </body>
 
