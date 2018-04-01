@@ -169,7 +169,9 @@ div.productUnit span.wangwang{
 	padding-left: 3px;
 }
 
-
+td.storeName{
+	text-overflow: hidden;
+}
 
 
 

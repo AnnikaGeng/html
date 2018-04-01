@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"; http-equiv="Content-Type" content="text/html";>
+<script src="/Users/Alice/jquery-2.1.4/jquery.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap/3.3.6/bootstrap.css">
+<script type="text/javascript" src="bootstrap/js/bootstrap/3.3.6/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="css/myOrder.css">
+
+</head>
+
+<body>
+	<div class="boughtDiv">
+		<div class="orderType">
+			<div class="selectedOrderType"><a href="#" oderStatus="all">所有订单</a></div>
+			<div><a href="#" oderStatus="waitPay">待付款</a></div>
+			<div><a href="#" oderStatus="waitDelivery">待发货</a></div>
+			<div><a href="#" oderStatus="waitConfirm">待收货</a></div>
+			<div><a href="#" oderStatus="waitReview" class="noRightborder">待评价</a></div>
+			<div class="orderTypeLastOne"></div>
+		</div>
+		<div style="clear:both"></div>
+		<div class="orderListTitle">
+			<table class="orderListTitleTable">
+				<tbody>
+					<tr>
+						<td>宝贝</td>
+						<td width="100px">单价</td>
+						<td width="100px">数量</td>
+						<td width="120px">实付款</td>
+						<td width="100px">交易操作</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="orderListItem">
+			<table oid="946" orderstatus="waitReview" class="orderListItemTable">
+				<tbody>
+					<tr class="orderListItemFirstTR">
+						<td colspan="2">
+							<b>2018-04-01</b>
+							<span>订单号：130441950134553245</span>
+						</td>
+						<td colspan="2" class="storeName">
+							<img src="pics/orderItemTmall.png" width="13px">中国电信官方旗舰店
+						</td>
+						<td colspan="1">
+							<a href="#" class="wangwanglink">
+								<div class="orderItemWangWangGif"></div>
+							</a>
+						</td>
+						<td class="orderItemDeleteTD">
+							<a href="#" oid="946" class="deleteOrderLink">
+								<span class="orderListItemDelete glyphicon glyphicon-trash"></span>
+							</a>
+						</td>
+					</tr>
+
+					<tr class="orderItemProductInfoPartTR">
+						<td class="orderItemProductInfoPartTD">
+							<img src="pics/phoneMoney.jpg" width="80px">
+						</td>
+						<td class="orderItemProductInfoPartTD">
+							<div class="orderListItemProductLinkOutDiv">
+								<a href="#">中国电信官方旗舰店 重庆手机充值50元电信话费直充快充 电信充值</a>
+								<div class="orderListItemProductLinkInnerDiv">
+									<img src="pics/creditcard.png" title="支持信用卡支付">
+									<img src="pics/7day.png" title="消费者保障服务，承诺7天退货">
+									<img src="pics/promise.png" title="消费者保障服务，承诺如实送达">
+								</div>
+							</div>
+						</td>
+						<td width="100px" class="orderItemProductInfoPartTD" valign="top">
+							<div class="orderItemProductOriginalPrice">￥50.00</div>
+							<div class="orderItemProductPrice">￥49.99</div>
+						</td>
+						<td width="100px" valign="top" class="orderListItemNumberTD orderItemProductInfoPartTD" rowspan="1">
+							<span class="orderListItemNumber">1</span>
+						</td>
+						<td width="120px" valign="top" class="orderListItemProductRealPriceTD orderItemProductInfoPartTD" rowspan="1">
+							<div class="orderListItemProductRealPrice" >￥49.99</div>
+							<div class="orderListItemPriceWithTransport" >（含运费：￥0.00）</div>
+						</td>
+						<td width="100px" valign="top" class="orderListItemButtonTD orderItemProductInfoPartTD" rowspan="1">
+							<a href="#"><button class="orderListItemReview">评价</button></a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			       <table oid="945" orderstatus="waitConfirm" class="orderListItemTable">
+                <tbody><tr class="orderListItemFirstTR">
+                    <td colspan="2">
+                    <b>2018-04-01</b>
+                    <span>订单号: 201609121700333128784
+                    </span>
+                    </td>
+                    <td colspan="2" class="storeName"><img width="13px" src="pics/orderItemTmall.png">强泽图书专营店</td>
+                    <td colspan="1">
+                        <a href="#nowhere" class="wangwanglink">
+                            <div class="orderItemWangWangGif"></div>
+                        </a>
+                    </td>
+                    <td class="orderItemDeleteTD">
+                        <a href="#nowhere" oid="945" class="deleteOrderLink">
+                            <span class="orderListItemDelete glyphicon glyphicon-trash"></span>
+                        </a>
+                    </td>
+                </tr>
+                    <tr class="orderItemProductInfoPartTR">
+                        <td class="orderItemProductInfoPartTD"><img width="80" height="80" src="pics/book.jpg"></td>
+                        <td class="orderItemProductInfoPartTD">
+                            <div class="orderListItemProductLinkOutDiv">
+                                <a href="#nowhere">正版 华研外语 15.0版 淘金式巧攻备考2018大学英语词汇6级分册 新题型 cet-6 便携版 英语六级单词书乱 </a>
+                                <div class="orderListItemProductLinkInnerDiv">
+                                            <img title="支持信用卡支付" src="pics/creditcard.png">
+                                            <img title="消费者保障服务,承诺7天退货" src="pics/7day.png">
+                                            <img title="消费者保障服务,承诺如实描述" src="pics/promise.png">                    
+                                </div>
+                            </div>
+                        </td>
+                        <td width="100px" class="orderItemProductInfoPartTD" valign="top">
+                            <div class="orderItemProductOriginalPrice">￥29.80</div>
+                            <div class="orderItemProductPrice">￥19.00</div>
+                        </td>
+                        <td width="100px" valign="top" class="orderListItemNumberTD orderItemProductInfoPartTD" rowspan="1">
+                        	<span class="orderListItemNumber">1</span>
+                        </td>
+                        <td width="120px" valign="top" class="orderListItemProductRealPriceTD orderItemProductInfoPartTD" rowspan="1">
+                            <div class="orderListItemProductRealPrice">￥19.00</div>
+                            <div class="orderListItemPriceWithTransport">(含运费：￥0.00)</div>
+                        </td>
+                        <td width="100px" valign="top" class="orderListItemButtonTD orderItemProductInfoPartTD" rowspan="1">
+                                <a href="#nowhere">
+                                    <button class="orderListItemConfirm">确认收货</button>
+                                </a>
+                        </td>                    
+                    </tr>
+            </tbody></table>
+		</div>
+	</div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
