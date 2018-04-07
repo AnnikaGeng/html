@@ -5,17 +5,18 @@
 <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap/3.3.6/bootstrap.css">
 <script type="text/javascript" src="bootstrap/js/bootstrap/3.3.6/bootstrap.js"></script>
 <link rel="stylesheet" type="text/css" href="css/myOrder.css">
+<script type="text/javascript" src="js/myOrder.js"></script>
 
 </head>
 
 <body>
 	<div class="boughtDiv">
 		<div class="orderType">
-			<div class="selectedOrderType"><a href="#" oderStatus="all">所有订单</a></div>
-			<div><a href="#" oderStatus="waitPay">待付款</a></div>
-			<div><a href="#" oderStatus="waitDelivery">待发货</a></div>
-			<div><a href="#" oderStatus="waitConfirm">待收货</a></div>
-			<div><a href="#" oderStatus="waitReview" class="noRightborder">待评价</a></div>
+			<div class="selectedOrderType"><a href="#" orderStatus="all">所有订单</a></div>
+			<div><a href="#" orderStatus="waitPay">待付款</a></div>
+			<div><a href="#" orderStatus="waitDelivery">待发货</a></div>
+			<div><a href="#" orderStatus="waitConfirm">待收货</a></div>
+			<div><a href="#" orderStatus="waitReview" class="noRightborder">待评价</a></div>
 			<div class="orderTypeLastOne"></div>
 		</div>
 		<div style="clear:both"></div>
@@ -33,7 +34,7 @@
 			</table>
 		</div>
 		<div class="orderListItem">
-			<table oid="946" orderstatus="waitReview" class="orderListItemTable">
+			<table oid="946" orderStatus="waitReview" class="orderListItemTable">
 				<tbody>
 					<tr class="orderListItemFirstTR">
 						<td colspan="2">
@@ -87,7 +88,7 @@
 				</tbody>
 			</table>
 
-			       <table oid="945" orderstatus="waitConfirm" class="orderListItemTable">
+			       <table oid="945" orderStatus="waitConfirm" class="orderListItemTable">
                 <tbody><tr class="orderListItemFirstTR">
                     <td colspan="2">
                     <b>2018-04-01</b>
