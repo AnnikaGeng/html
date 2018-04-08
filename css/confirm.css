@@ -126,6 +126,18 @@ label.orderItemDeliveryLabel{
 	font-weight: normal;
 }
 
+
+span.leaveMessageTextareaSpan {
+    display: inline-block;
+}
+
+textarea.leaveMessageTextarea {
+    border: 1px solid #FFAD35;
+    width: 250px;
+    height: 60px;
+    resize: none;
+ }
+
 select.orderItemDeliverySelect{
 	width: 100px;
 	height: 23px;
