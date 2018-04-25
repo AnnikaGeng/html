@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learn</title>
+	<style type="text/css">
+		#navigator{
+			width: 600px;
+			margin: 0 auto;
+		}
+		nav{
+			font-size: 0;
+		}
+		nav a{
+			display: inline-block;
+			width: 80px;
+			color: white;
+			text-align: center;
+			border:1px solid white;
+			font-size: 13px;
+			padding: 3px 0;
+
+		}
+		.btn{
+			width: 6px;
+			height: 6px;
+			float: left;
+			margin:10px;
+		}
+		.btn:hover{
+			cursor: pointer;
+		}
+		#red{
+			border:4px solid red;
+			background-color: red;
+		}
+		#green{
+			border:4px solid green;
+			background-color: green;
+		}
+		#black{
+			border:4px solid grey;
+			background-color: grey;
+		}
+
+		.selected{
+			background-color: white !important;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="red.css">
+</head>
+<body>
+	<div id="navigator">
+		<div id="colorButton">
+			<div class="btn selected" id="red"></div>
+			<div class="btn " id="green"></div>
+			<div class="btn " id="black"></div>
+		</div>
+		<div style="clear: both"></div>
+		<nav>
+			<a>新闻</a>
+			<a>娱乐</a>
+			<a>体育</a>
+			<a>电影</a>
+			<a>音乐</a>
+			<a>旅游</a>
+		</nav>
+	</div>
+	<script type="text/javascript">
+		
+		var link = document.getElementsByTagName("link")[0];
+		var color = document.getElementById("colorButton").childNodes;
+
+		for(var i=0;i<color.length;i++){
+			color[i].onclick=function()
+			{
+				for(var p in color){
+				 	color[p].className = "btn";
+				}
+				this.className = "btn selected";
+				link['href'] = this.id+".css";
+
+			}
+		}
+		
+	</script>
+	
+
+
+</body>
+</html>
