@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>learn</title>
+	<style type="text/css">
+		body{
+			font-size: 12px;
+		}
+		#kurs{
+			width: 300px;
+			height: 200px;
+			margin:0 auto;
+			border:1px solid black;
+			border-top: transparent;
+		}
+		nav{
+			background-color: black;
+			height: 30px;
+			color: white;
+		}
+		nav li{
+			text-decoration: none;
+			display: inline-block;
+			width: 50px;
+			line-height: 30px;
+			padding: 0 5px;
+		}
+		nav li:hover{
+			cursor: pointer;
+		}
+		ul{
+			display: none;
+		}
+		.kursName{
+			display: block;
+		}
+		.selected{
+			background-color: #ccc;
+			border:1px solid black;
+			line-height: 28px;
+		}
+	</style>
+</head>
+<body>
+	<div id="kurs">
+		<nav id="num">
+			<li class="selected">第一课</li>
+			<li>第二课</li>
+			<li>第三课</li>
+		</nav>
+		<ul class="kursName">
+			<li>网页特效原理分析</li>
+			<li>响应用户操作</li>
+			<li>提示框效果</li>
+		</ul>
+		<ul class="">
+			<li>引入函数</li>
+			<li>网页换肤效果</li>
+			<li>展开/收缩播放列表效果</li>
+		</ul>
+		<ul class="">
+			<li>事件驱动</li>
+			<li>元素属性操作</li>
+			<li>动手编写第一个JS特效</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		var nav = document.getElementById("num");
+		var li = nav.getElementsByTagName("li");
+		var ul = document.getElementsByTagName("ul");
+		for(var i=0;i<li.length;i++){
+			li[i].index = i;                //在触发时间的函数之内无法记录i的值，原因不明
+			li[i].onmouseover=function()
+			{
+				console.log(i);
+				for(var j=0;j<li.length;j++)
+				{
+					li[j].classList.remove("selected");
+				}
+				this.classList.add ("selected");
+				for(var k=0;k<ul.length;k++)
+				{
+					ul[k].classList.remove("kursName");
+				}
+				ul[this.index].classList.add("kursName");
+
+			}
+			
+		}
+	</script>
+	
+
+
+</body>
+</html>
