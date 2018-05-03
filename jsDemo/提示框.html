@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>提示框效果</title>
+	<style type="text/css">
+		body{
+			font-size: 12px;
+			padding: 0;
+		}
+		#album{
+			width: 254px;
+			height: 300px;
+			border:1px solid black;
+			margin:5px auto;
+			
+		}
+		h2{
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;line-height: 30px;
+		}
+		ul{
+			padding-left: 5px;
+			border-bottom: 1px solid black;
+			float: left;
+			position: relative;
+			top: -20px;
+		}
+		ul li{
+			width: 90px;
+			height: 90px;
+			list-style-type: none;
+			position: relative;
+			float: left;
+			background-color: grey;
+			border:1px solid #333;
+			margin:10px 10px 0 0;
+			padding:10px;
+			cursor: crosshair;
+			display: inline;
+			zoom:1;
+		}
+		img{
+			width: 115px;
+			height: 115px;
+			margin:5px;
+			display: none;
+			cursor: crosshair;
+			position: absolute;
+			border:2px solid #999;	
+			top: -14px;
+			left: -14px;
+		}
+		ul:after{
+			content:".";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+		.zindex{
+			z-index: 1;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="album">
+		<h2>服装展示噢</h2>
+		<ul>
+			<li>优衣库
+			<img src="../Documents/GitHub/html/pics/spring15.jpg">
+			</li>
+			<li>UR
+			<img src="../Documents/GitHub/html/pics/spring14.jpg" alt="" ">
+			</li>
+			<li>ZARA<img src="../Documents/GitHub/html/pics/jeans5.jpg" alt="" "></li>
+			<li>LV<img src="../Documents/GitHub/html/pics/jeans4.jpg" alt="" "></li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		var li = document.getElementsByTagName("li");
+		var img = document.getElementsByTagName("img");
+		for(var i=0;i<li.length;i++){
+			li[i].index =img[i].index = i;
+			li[i].onmouseover = function(){
+				this.className = "zindex";
+				img[this.index].style.display = "block";};
+			img[i].onmouseover = function(){
+				li[this.index].className = "";
+				this.style.display = "block";
+			}
+			img[i].onmouseout = function(){
+				li[this.index].className = "";
+				this.style.display = "none";
+			}
+		}
+	</script>
+</body>
+</html>
